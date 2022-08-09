@@ -1,0 +1,33 @@
+ <script>
+            $(function () {
+                $("#chkPassport").click(function () {
+                    if ($(this).is(":checked")) {
+                        $("#dvPassport").show();
+                        $("#AddPassport").hide();
+                    }  else {
+                $("#dvPassport").hide();
+                $("#AddPassport").show();
+                }
+                });
+            });
+    </script>
+    
+    
+    
+    
+    
+                                                       <div class="form-check checkbox checkbox-success">
+                                                            <input class="form-check-input color-red" id="chkPassport" id="checkbox-primary"  type="checkbox">
+                                                            <label class="form-check-label" for="chkPassport" for="checkbox-primary" ></label>
+                                                        </div>
+                                                        
+                                                         <div id="dvPassport" style="display: none">
+                                                            <div id="field1" class="d-flex">
+                                                                <button type="button" id="sub" class="sub">&#x2212;</button>
+                                                                <input type="text" id="1" value="0" min="1" max="100" id="txtPassportNumber" />
+                                                                <button type="button" id="add" class="add">&#43;</button>
+                                                            </div>
+                                                        </div>
+                                                        <div id="AddPassport" style="padding-left:42px;">
+                                                           1
+                                                        </div>
